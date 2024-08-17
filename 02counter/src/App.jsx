@@ -9,7 +9,6 @@ function App() {
 
   function addvalue(){
     //counter += 1
-    console.log(counter)
     setcounter(counter + 1)
   }
 
