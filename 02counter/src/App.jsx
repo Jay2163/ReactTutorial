@@ -9,10 +9,15 @@ function App() {
 
   function addvalue(){
     //counter += 1
-    setcounter(counter + 1)
+    setcounter((prevCounter) => {
+      return prevCounter + 1
+  }) //it's like callback function so we can update the varaiable
+    setcounter((prevCounter) => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
   }
 
-  const removevalue =()=>{
+  const removevalue = ()=>{
     if(counter > 0){
       setcounter(counter-1)
     }
