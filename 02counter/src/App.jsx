@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
 
-  let [counter, setcounter] = useState(15) //change in UI in all place if counter variable available
+  const [counter, setcounter] = useState(15) //change in UI in all place if counter variable available
 
   //let counter = 15
 
